@@ -16,3 +16,11 @@ try(Scanner scanner = new Scanner(Paths.get("file.txt"))) {
   System.out.println("Error: " + e.getMessage());
 }
 ```
+#### Skipping empty line
+
+```java
+// if the line is blank we do nothing
+if (line.isEmpty()) {
+    continue;
+}
+```
